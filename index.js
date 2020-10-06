@@ -1,10 +1,15 @@
 $(document).ready(function(){
-    // M.AutoInit();
     $('.slider').slider({height:400,});
     $('.materialboxed').materialbox();
     $('.tap-target').tapTarget();
     $('.sidenav').sidenav();
-    console.log('ready')
+    $('input.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'https://placehold.it/250x250'
+      },
+    });
 
     const fakelist=[
         {img:"./images/burningcake.jpg",
@@ -19,7 +24,7 @@ $(document).ready(function(){
     ]
     fakelist.forEach(data=>{console.log(data)
         $("#cards").append(`
-        <div class="col s12 m3">
+        <div class="col s12 m4">
         <div class="card">
           <div class="card-image">
             <img src=${data.img}></img>
