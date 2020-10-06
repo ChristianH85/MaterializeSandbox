@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.tap-target').tapTarget();
     $('.sidenav').sidenav();
     $('.datepicker').datepicker();
+    $('.carousel').carousel();
     $('input.autocomplete').autocomplete({
       data: {
         "Apple": null,
