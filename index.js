@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('.tap-target').tapTarget();
     $('.sidenav').sidenav();
+    $('.datepicker').datepicker();
     $('input.autocomplete').autocomplete({
       data: {
         "Apple": null,
